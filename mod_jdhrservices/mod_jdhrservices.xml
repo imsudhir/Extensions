@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+   <name>mod_jdhrservices</name>
+   <author>JoomDev Team</author>
+   <creationDate>July 2018</creationDate>
+   <copyright>Copyright (C) 2005 - 2017 Open Source Matters. All rights reserved.</copyright>
+   <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+   <authorEmail>info@joomdev.com</authorEmail>
+   <authorUrl>www.joomdev.com</authorUrl>
+   <version>3.0.0</version>
+   <description>mod_jdhrservices</description>
+   <files>
+      <filename module="mod_jdhrservices">mod_jdhrservices.php</filename>
+      <folder>tmpl</folder>
+      <folder>forms</folder>
+
+      <folder>assets</folder>
+    </files>
+   <languages folder="language">
+      <language tag="en-GB">en-GB/en-GB.mod_jdhrservices.ini</language>
+      <language tag="en-GB">en-GB/en-GB.mod_jdhrservices.sys.ini</language>
+   </languages>
+   <config>
+      <fields name="params">
+         <fieldset name="basic" addfieldpath="/modules/mod_jdhrservices/fields">
+			<field 
+				  name="jdhrservices"
+				  type="subform"
+				  formsource="/modules/mod_jdhrservices/forms/items.xml"
+				  multiple="true"
+				  label="Add Item"
+			/>
+		 </fieldset>
+		 <fieldset name="globalsetting" label="Global Setting">
+			<field 
+				  name="jdShowButton"
+				  type="radio"
+				  default="1"
+				  class="btn-group btn-group-yesno">
+			<option value="1">JYES</option>
+            <option value="0">JNO</option>
+ 		    </field>
+			<field
+					name="jdButtonText"
+					type="text"
+					label="Button Text"
+					description=""
+					default="Read More"
+					showon="jdShowButton:1"
+ 			  />
+			<field
+					name="jdTitleHtmlTag"
+					type="list"
+					label="Title Html Tag"
+					description=""
+					default=""
+ 			  >
+			<option value="h1">h1</option>
+            <option value="h2">h2</option>
+            <option value="h3">h3</option>
+            <option value="h4">h4</option>
+            <option value="h5">h5</option>
+            <option value="h6">h6</option>
+            <option value="div">div</option>
+            <option value="h2">h2</option>
+			</field>
+		<field
+			name="jdDesktopColumn"
+			type="list"
+			label="Desktop Column"
+			description=""
+			default=""
+ 			>
+			<option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="6">6</option> 
+			</field>	
+		<field
+			name="jdTabletColumn"
+			type="text"
+			label="Tablet Column"
+			description=""
+			default=""
+ 			>
+			<option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="6">6</option> 
+			</field>	
+			
+		<field
+			name="jdMobileColumn"
+			type="list"
+			label="Mobile Column"
+			description=""
+			default=""
+ 			>
+			<option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="6">6</option> 
+			</field>	
+			
+ 		 </fieldset>
+          
+      </fields>
+   </config>
+</extension>

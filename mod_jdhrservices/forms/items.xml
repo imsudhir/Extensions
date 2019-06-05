@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+				<field
+					name="jdtitle"
+					type="text"
+					label="Title"
+					description=""
+					default=""
+					required="true"
+			  />
+			  <field
+					name="jdmedia"
+					type="media"
+					label="Media"
+					description=""
+					default=""
+					required="true"
+			  />
+			  <field
+					name="jddescription"
+					type="textarea"
+					label="Media"
+					description="Description"
+					default=""
+					required="true"
+			  />
+			  <field
+					name="jdButtonLink"
+					type="text"
+					label="Button Link"
+					description=""
+					default=""
+					required="true"
+			  />
+			  <field
+					name="jdBackgroundColor"
+					type="color"
+					label="Background Color"
+					description=""
+					default=""
+					required="true"
+			  />
+			  <field
+					name="jdTextColor"
+					type="color"
+					label="Text Color"
+					description=""
+					default=""
+					required="true"
+			  />
+</form>
